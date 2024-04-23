@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--BoxIcons cdn link-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bx-ghost'></i>
+            <span class="logo_name">MertcanEREN</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="link_name">Ana Sayfa</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link_name" href="">Ana Sayfa</a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li>
+                <div class="icon-link">
+                    <a href="">
+                        <i class='bx bx-collection'></i>
+                        <span class="link_name">Kenarlıklar</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li>
+                        <a class="link_name" href="">Kenarlıklar</a>
+                    </li>
+                    <li>
+                        <a href="">Birinci</a>
+                    </li>
+                    <li>
+                        <a href="">İkinci</a>
+                    </li>
+                    <li>
+                        <a href="">Ücüncü</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="icon-link ">
+                    <a href=" ">
+                        <i class='bx bx-book-alt'></i>
+                        <span class="link_name ">Temalar</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu ">
+                    <li>
+                        <a class="link_name " href=" ">Temalar</a>
+                    </li>
+                    <li>
+                        <a href=" ">HTML</a>
+                    </li>
+                    <li>
+                        <a href=" ">CSS</a>
+                    </li>
+                    <li>
+                        <a href=" ">JS</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href=" ">
+                    <i class='bx bx-pie-chart-alt-2'></i>
+                    <span class="link_name ">Analytics</span>
+                </a>
+                <ul class="sub-menu blank ">
+                    <li>
+                        <a class="link_name " href=" ">Analytics</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a href=" ">
+                    <i class='bx bx-scatter-chart'></i>
+                    <span class="link_name ">Chart</span>
+                </a>
+                <ul class="sub-menu blank ">
+                    <li>
+                        <a class="link_name " href=" ">Analytics</a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li>
+                <div class="icon-link ">
+                    <a href=" ">
+                        <i class='bx bx-plug'></i>
+                        <span class="link_name ">Plugins</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu ">
+                    <li>
+                        <a class="link_name " href=" ">Plugins</a>
+                    </li>
+                    <li>
+                        <a href=" ">UI Face</a>
+                    </li>
+                    <li>
+                        <a href=" ">Pigments</a>
+                    </li>
+                    <li>
+                        <a href=" ">Box Icons</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href=" ">
+                    <i class='bx bx-git-commit'></i>
+                    <span class="link_name ">Explore</span>
+                </a>
+                <ul class="sub-menu blank ">
+                    <li>
+                        <a class="link_name " href=" ">Explore</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a href=" ">
+                    <i class='bx bx-history'></i>
+                    <span class="link_name ">History</span>
+                </a>
+                <ul class="sub-menu blank ">
+                    <li>
+                        <a class="link_name " href=" ">History</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a href=" ">
+                    <i class='bx bx-cog'></i>
+                    <span class="link_name ">Setting</span>
+                </a>
+                <ul class="sub-menu blank ">
+                    <li>
+                        <a class="link_name " href=" ">Setting</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <div class="profile-details ">
+                    <div class="profile-content ">
+                        <img src="foti.png " alt=" ">
+                    </div>
+
+                    <div class="name-job ">
+                        <div class="profile_name ">Mertcan EREN</div>
+                        <div class="job ">Web Designer</div>
+                    </div>
+                    <i class='bx bx-log-in-circle'></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <section class="home-section">
+        <div class="home-content">
+            <i class="bx bx-menu"></i>
+            <span class="text">Drop Down Sidebar</span>
+        </div>
+    </section>
+
+    <script>
+        let arrow = document.querySelectorAll(".arrow ");
+        for (var i = 0; i < arrow.length; i++) {
+            arrow[i].addEventListener("click", (e) => {
+                let arrowParent = e.target.parentElement.parentElement;
+                arrowParent.classList.toggle("showMenu");
+                console.log(arrowParent);
+            });
+        }
+
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".bx-menu");
+        sidebarBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        });
+        console.log(sidebar);
+    </script>
+
+</body>
+
+</html>
